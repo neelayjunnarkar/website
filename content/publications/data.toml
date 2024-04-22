@@ -1,0 +1,43 @@
+[[publication]]
+title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
+authors = "**Neelay Junnarkar**, Murat Arcak, Peter Seiler"
+date = "2024"
+doi = "https://arxiv.org/abs/2404.07373"
+pdf = "https://arxiv.org/pdf/2404.07373.pdf"
+
+
+[[publication]]
+title = "Exploiting Symmetry in Dynamics for Model-Based Reinforcement Learning with Asymmetric Rewards"
+authors = "Yasin Sonmez, **Neelay Junnarkar**, Murat Arcak"
+date = "2024"
+doi = "https://arxiv.org/abs/2403.19024"
+pdf = "https://arxiv.org/pdf/2403.19024.pdf"
+
+[[publication]]
+title = "Grouping of N-1 Contingencies for Controller Synthesis: A Study for Power Line Failures"
+authors = "**Neelay Junnarkar**, Emily Jensen, Xiaofan Wu, Suat Gumussoy, Murat Arcak"
+date = "2023"
+doi = "https://arxiv.org/abs/2404.07415"
+pdf = "https://arxiv.org/pdf/2404.07415.pdf"
+
+[[publication]]
+title = "Certifying Stability and Performance of Uncertain Differential-Algebraic Systems: A Dissipativity Framework"
+authors = "Emily Jensen, **Neelay Junnarkar**, Murat Arcak, Xiaofan Wu, Suat Gumussoy"
+date = "2023"
+doi = "https://arxiv.org/abs/2308.08471"
+pdf = "https://arxiv.org/pdf/2308.08471.pdf"
+
+[[publication]]
+title = "Synthesis of Stabilizing Recurrent Equilibrium Network Controllers"
+authors = "**Neelay Junnarkar**, He Yin, Fangda Gu, Murat Arcak, Peter Seiler"
+date = "2022"
+doi = "https://ieeexplore.ieee.org/abstract/document/9992684"
+pdf = "https://arxiv.org/pdf/2204.00122.pdf"
+code = "https://github.com/neelayjunnarkar/stabilizing-ren"
+
+[[publication]]
+title = "Fast Assignment in Asset-Guarding Engagements using Function Approximation"
+authors = "**Neelay Junnarkar**, Emmanuel Sin, Peter Seiler, Douglas Philbrick, Murat Arcak"
+date = "2022"
+doi = "https://ieeexplore.ieee.org/abstract/document/9867720"
+pdf = "https://arxiv.org/pdf/2404.08086.pdf"

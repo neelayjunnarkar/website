@@ -1,0 +1,21 @@
+[[publication]]
+title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
+authors = "**Neelay Junnarkar**, Murat Arcak, Peter Seiler"
+date = "2024"
+doi = "https://arxiv.org/abs/2404.07373"
+pdf = "https://arxiv.org/pdf/2404.07373.pdf"
+
+
+[[publication]]
+title = "Exploiting Symmetry in Dynamics for Model-Based Reinforcement Learning with Asymmetric Rewards"
+authors = "Yasin Sonmez, **Neelay Junnarkar**, Murat Arcak"
+date = "2024"
+doi = "https://arxiv.org/abs/2403.19024"
+pdf = "https://arxiv.org/pdf/2403.19024.pdf"
+
+[[publication]]
+title = "Grouping of N-1 Contingencies for Controller Synthesis: A Study for Power Line Failures"
+authors = "**Neelay Junnarkar**, Emily Jensen, Xiaofan Wu, Suat Gumussoy, Murat Arcak"
+date = "2023"
+doi = "https://arxiv.org/abs/2404.07415"
+pdf = "https://arxiv.org/pdf/2404.07415.pdf"

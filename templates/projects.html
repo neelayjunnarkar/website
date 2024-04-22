@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} | {{ super() }}{% endblock %}
+
+
+{% block main %}
+  <h2>Personal Projects</h2>
+  <div class="projects-section">
+    <div class="posts">
+      {% set data = load_data(path="content/projects/data.toml", format="toml") %}
+      {% for proj in data.project %}
+      <div class="post">
+        <div class="title">
+          {% if proj.homepage %}
+            <a href="{{ proj.homepage }}" target="_blank" rel='noreferrer noopener'>{{ proj.name | trim }}</a>
+          {% else %}
+            {{ proj.name | trim }}
+          {% endif %}
+        </div>
+        {% if proj.description %}
+          <div class="description">{{ proj.description | trim}}</div>
+        {% endif %}
+
+        <div class="links">
+          {% if proj.homepage %}
+            <a href="{{ proj.homepage }}" target="_blank" rel='noreferrer noopener'><i data-feather="home"></i></a>
+          {% endif %}
+          {% if proj.code %}
+            <a href="{{ proj.code }}" target="_blank" rel='noreferrer noopener'><i data-feather="github"></i></a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+      </div>    
+  </div>
+{% endblock %}
