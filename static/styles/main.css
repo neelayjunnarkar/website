@@ -371,7 +371,7 @@ figure:hover {
     position: relative;
     background-color: #f9f9f9;
     /* Light gray background for a bit of distinction */
-    transition: background-color 0.2s ease;
+    transition: background-color 0.3s ease;
     /* Smooth transition for hover effects */
 }
 
@@ -416,6 +416,7 @@ figure:hover {
     flex-direction: column;
     gap: 1em;
     margin: 2em 0;
+    transition: background-color 0.3s ease;
 
     .post {
         flex-direction: column;
@@ -425,6 +426,7 @@ figure:hover {
         border-radius: 25px;
         padding: 1rem;
         background-color: #f9f9f9;
+        transition: background-color 0.3s ease;
     }
 
     .post:hover {
@@ -436,7 +438,7 @@ figure:hover {
             color: var(--color-link);
             /* Using the existing link color variable */
             text-decoration: none;
-            /* transition: color 0.3s ease; */
+            transition: color 0.3s ease;
             /* Smoothens the color transition on hover */
             margin-left: 0.5rem;
         }
@@ -459,6 +461,8 @@ figure:hover {
                 text-decoration: none;
                 color: inherit;
                 font-weight: inherit;
+
+                transition: color 0.3s ease;
     
                 &:hover {
                     text-decoration: underline !important;
@@ -496,6 +500,8 @@ figure:hover {
 
     .authors {
         font-size: 1rem;
+        transition: color 0.3s ease;
+        /* Smoothens the color transition on hover */
     }
 
     .description {
@@ -531,7 +537,7 @@ body[data-theme="dark"] .theme-toggle {
 }
 
 .theme-transition {
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, opacity 0.4s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
 }
 
