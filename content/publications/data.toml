@@ -5,12 +5,11 @@ date = "2024"
 doi = "https://arxiv.org/abs/2404.07373"
 pdf = "https://arxiv.org/pdf/2404.07373.pdf"
 
-
 [[publication]]
 title = "Exploiting Symmetry in Dynamics for Model-Based Reinforcement Learning with Asymmetric Rewards"
 authors = "Yasin Sonmez, **Neelay Junnarkar**, Murat Arcak"
 date = "2024"
-doi = "https://arxiv.org/abs/2403.19024"
+doi = "https://doi.org/10.1109/LCSYS.2024.3409560"
 pdf = "https://arxiv.org/pdf/2403.19024.pdf"
 
 [[publication]]
