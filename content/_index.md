@@ -12,7 +12,9 @@ My primary research interests are in the application of machine learning to cont
 
 ## Ongoing Work
 
-*TODO*
+* Tighter bounds on model uncertainties and nonlinearities.
+* Investigation of particular cases of model uncertainties.
+* Faster constrained neural network training.
 
   </div>
 
