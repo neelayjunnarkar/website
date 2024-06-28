@@ -13,7 +13,7 @@ My primary research interests are in the application of machine learning to cont
 ## Ongoing Work
 
 * Tighter bounds on model uncertainties and nonlinearities
-* Investigation of neural network control of models with particular types of uncertainties
+* Neural network control of models with particular types of uncertainties
 * Faster constrained neural network training
 
   </div>
