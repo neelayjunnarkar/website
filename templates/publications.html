@@ -10,7 +10,6 @@
       {% set data = load_data(path="content/publications/data.toml", format="toml") %}
       {% for pub in data.publication %}
       <div class="post">
-        <div class="info"><span>{{ pub.date | trim }}</span></div>
         <div class="title">
           {% if pub.doi %}
             <a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>{{ pub.title | trim }}</a>
@@ -18,7 +17,13 @@
             {{ pub.title | trim }}
           {% endif %}
         </div>
-        <div class="authors">{{ pub.authors | trim | markdown | safe }}</div>
+        <div class="authors">
+          <span style="text-align:left">{{pub.authors | safe}}
+            <span style="float:right">
+              <div class="info">{{ pub.date | trim }}</div>
+            </span>
+          </span>
+        </div>
         {% if pub.description %}
           <div class="description">{{ pub.description | trim}}</div>
         {% endif %}
