@@ -1,4 +1,11 @@
 [[publication]]
+title = "Stability Margins of Neural Network Controllers"
+authors = "**Neelay Junnarkar**, Murat Arcak, Peter Seiler"
+date = "2024"
+doi = "https://arxiv.org/abs/2409.09184"
+pdf = "https://arxiv.org/pdf/2409.09184.pdf"
+
+[[publication]
 title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
 authors = "**Neelay Junnarkar**, Murat Arcak, Peter Seiler"
 date = "2024"
