@@ -4,6 +4,7 @@ authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
 date = "2024"
 doi = "https://arxiv.org/abs/2409.09184"
 pdf = "https://arxiv.org/pdf/2409.09184.pdf"
+code = "https://github.com/neelayjunnarkar/nn-stability-margins"
 
 [[publication]]
 title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
@@ -11,6 +12,7 @@ authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
 date = "2024"
 doi = "https://arxiv.org/abs/2404.07373"
 pdf = "https://arxiv.org/pdf/2404.07373.pdf"
+code = "https://github.com/neelayjunnarkar/neural-network-dissipativity"
 
 [[publication]]
 title = "Exploiting Symmetry in Dynamics for Model-Based Reinforcement Learning with Asymmetric Rewards"
@@ -18,6 +20,7 @@ authors = "Yasin Sonmez, <strong>Neelay Junnarkar</strong>, Murat Arcak"
 date = "2024"
 doi = "https://doi.org/10.1109/LCSYS.2024.3409560"
 pdf = "https://arxiv.org/pdf/2403.19024.pdf"
+code = "https://github.com/YasinSonmez/symmetry-cs285"
 
 [[publication]]
 title = "Grouping of N-1 Contingencies for Controller Synthesis: A Study for Power Line Failures"
