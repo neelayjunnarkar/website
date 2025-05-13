@@ -1,4 +1,11 @@
 [[publication]]
+title = "Sempervirens: A Fast Reconstruction Algorithm for Noisy and Incomplete Binary Matrix Representations of Trees"
+authors = "<strong>Neelay Junnarkar</strong>, Can Kızılkale, Nevena Golubovic, Murat Arcak, Aydın Buluç"
+date = "2025"
+doi = "https://doi.org/10.1287/ijoc.2023.0373"
+pdf = "/files/sempervirens.pdf"
+
+[[publication]]
 title = "Stability Margins of Neural Network Controllers"
 authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
 date = "2024"
