@@ -10,7 +10,7 @@ code = "https://github.com/nevenag/sempervirens"
 title = "Stability Margins of Neural Network Controllers"
 authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
 date = "2024"
-doi = "https://arxiv.org/abs/2409.09184"
+doi = "https://doi.org/10.23919/ACC63710.2025.11107746"
 pdf = "https://arxiv.org/pdf/2409.09184.pdf"
 code = "https://github.com/neelayjunnarkar/nn-stability-margins"
 
