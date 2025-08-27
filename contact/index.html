@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info | Neelay Junnarkar</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="title" content="Contact Info">
+<meta property="og:site_name" content="Neelay Junnarkar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Contact Info">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://neelayjunnarkar.com/https://neelayjunnarkar.com/contact/">
+
+<meta property="article:published_time" content="">
+    <meta property="article:modified_time" content="">
+
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact Info">
+<meta name="twitter:description" content="">
+<meta name="twitter:url" content="https://neelayjunnarkar.com/https://neelayjunnarkar.com/contact/">
+
+<meta name="twitter:site" content="@SHOULDNOTAPPEAR_">
+
+<meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Neelay Junnarkar">
+
+    <meta name="twitter:creator" content="@SHOULDNOTAPPEAR_">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://neelayjunnarkar.com/styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" integrity="sha512-4lykFR6C2W55I60sYddEGjieC2fU79R7GUtaqr3DzmNbo0vSaO1MfUjMoTFYYuedjfEix6uV9jVTtRCSBU/Xiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<header>
+    <a href="https://neelayjunnarkar.com/" class="title">
+        <h2 class="name">Neelay Junnarkar</h2>
+    </a>
+    <nav>
+        <div class="nav-items">
+            <a href="https://neelayjunnarkar.com/">Home</a>
+            <a href="https://neelayjunnarkar.com/publications/">Research</a>
+            <a href="https://neelayjunnarkar.com/projects/">Projects</a>
+            <a href="https://neelayjunnarkar.com/contact/">Contact</a></div>
+        <button class="theme-toggle" title="Toggle Dark Mode">
+            <i data-feather="moon"></i>
+        </button>
+    </nav>
+</header>
+
+    <h2>Contact Info</h2>
+  <main>
+    <p>Email: <em>neelay.junnarkar</em> at either <em>berkeley.edu</em> or <em>gmail.com</em></p>
+<p>Other useful profiles:</p>
+<ul>
+<li>Google Scholar: <a href="https://scholar.google.com/citations?user=_I7cqy0AAAAJ">Neelay Junnarkar</a></li>
+<li>Github: <a href="https://github.com/neelayjunnarkar">neelayjunnarkar</a></li>
+<li>ORCID: <a href="https://orcid.org/0000-0002-2644-9856">Neelay Junnarkar</a></li>
+</ul>
+
+  </main>
+  <p class="tags">
+  </p>
+<footer>
+    © 2024 Neelay Junnarkar<br>
+    <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=_I7cqy0AAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar" class="social-icon">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-doctoral-cap"
+            >
+            <path d="M 22 9 l -10 -4 -10 4 10 4 10 -4 v 6.6 M 6 10.6 v 5 a 6 2.4 0 0 0 12 0 v -5" />
+            </svg>
+        </a>
+        <a href="https://github.com/neelayjunnarkar" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i data-feather="github"></i></a>
+    </div>
+</footer>
+<script>
+    feather.replace();
+    const themeToggle = document.querySelector('.theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    // Set the initial theme based on user preference or localStorage
+    if (currentTheme) {
+        document.body.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            themeToggle.innerHTML = '<i data-feather="sun"></i>';
+            feather.replace();
+        }
+    }
+
+    themeToggle.addEventListener('click', function() {
+        let theme = 'light';
+
+        // Add the transition class
+        document.body.classList.add('theme-transition');
+
+        if (document.body.getAttribute('data-theme') !== 'dark') {
+            theme = 'dark';
+            themeToggle.innerHTML = '<i data-feather="sun"></i>';
+        } else {
+            themeToggle.innerHTML = '<i data-feather="moon"></i>';
+        }
+        feather.replace();
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+
+        // Remove the transition class after 0.5s
+        setTimeout(() => {
+            document.body.classList.remove('theme-transition');
+        }, 500);
+    });
+</script>
+</html>
