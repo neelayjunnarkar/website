@@ -1,4 +1,12 @@
 [[publication]]
+title = "Polynomial Constraints for Robustness Analysis of Nonlinear Systems"
+authors = "<strong>Neelay Junnarkar</strong>, Peter Seiler, Murat Arcak"
+date = "2026"
+doi = "https://neelayjunnarkar.com/files/polynomial_constraints.pdf"
+pdf = "https://neelayjunnarkar.com/files/polynomial_constraints.pdf"
+code = "https://github.com/neelayjunnarkar/polynomial-constraints"
+
+[[publication]]
 title = "Sempervirens: A Fast Reconstruction Algorithm for Noisy and Incomplete Binary Matrix Representations of Trees"
 authors = "<strong>Neelay Junnarkar</strong>, Can Kızılkale, Nevena Golubovic, Murat Arcak, Aydın Buluç"
 date = "2025"
@@ -9,7 +17,7 @@ code = "https://github.com/nevenag/sempervirens"
 [[publication]]
 title = "Stability Margins of Neural Network Controllers"
 authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
-date = "2024"
+date = "2025"
 doi = "https://doi.org/10.23919/ACC63710.2025.11107746"
 pdf = "https://arxiv.org/pdf/2409.09184.pdf"
 code = "https://github.com/neelayjunnarkar/nn-stability-margins"

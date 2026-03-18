@@ -14,6 +14,7 @@ See my [CV](/files/NeelayJunnarkar_CV.pdf)!
 
 ## Ongoing Work
 
++ Verification of local dissipativity and robustness properties of systems involving neural networks
 * Tighter bounds on model uncertainties and nonlinearities
 * Faster constrained neural network training
 
@@ -26,6 +27,3 @@ See my [CV](/files/NeelayJunnarkar_CV.pdf)!
   </div>
 
 </div>
-
-
-
