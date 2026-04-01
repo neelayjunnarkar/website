@@ -14,7 +14,7 @@ See my [CV](/files/NeelayJunnarkar_CV.pdf)!
 
 ## Ongoing Work
 
-+ Joint synthesis and verification of robustness properties of systems involving neural networks
++ Joint synthesis of neural network controllers and certificates of closed-loop robustness.
 * Tighter bounds on model uncertainties and nonlinearities for computationally tractable verification
 * Faster constrained neural network training
 
