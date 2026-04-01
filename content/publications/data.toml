@@ -1,4 +1,12 @@
 [[publication]]
+title = "Learning Neural Network Controllers with Certified Robust Performance via Adversarial Training"
+authors = "<strong>Neelay Junnarkar</strong>, Yasin Sonmez, Murat Arcak"
+date = "2026"
+doi = "https://neelayjunnarkar.com/files/local_robust_dissipativity.pdf"
+pdf = "https://neelayjunnarkar.com/files/local_robust_dissipativity.pdf"
+code = "https://github.com/neelayjunnarkar/local-robust-dissipativity"
+
+[[publication]]
 title = "Polynomial Constraints for Robustness Analysis of Nonlinear Systems"
 authors = "<strong>Neelay Junnarkar</strong>, Peter Seiler, Murat Arcak"
 date = "2026"
