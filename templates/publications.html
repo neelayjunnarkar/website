@@ -1,40 +1,98 @@
-{% extends "base.html" %}
-
-{% block title %}{{ section.title }} | {{ super() }}{% endblock %}
-
-{% block main %}
-  <h2>Research</h2>
-  <!-- <p>Published and Under Review</p> -->
-  <div class="projects-section">
+{% extends "base.html" %} {% block title %}{{ section.title }} | {{ super() }}{%
+endblock %} {% block main %}
+<h2>Research</h2>
+<!-- <p>Published and Under Review</p> -->
+<div class="projects-section">
     <div class="posts">
-      {% set data = load_data(path="content/publications/data.toml", format="toml") %}
-      {% for pub in data.publication %}
-      <div class="post">
-        <div class="title">
-          {% if pub.doi %}
-            <a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>{{ pub.title | trim }}</a>
-          {% else %}
-            {{ pub.title | trim }}
-          {% endif %}
-        </div>
-        <div class="authors">
-          <span style="text-align:left">{{pub.authors | safe}}
-            <span style="float:right">
-              <div class="info">{{ pub.date | trim }}</div>
-            </span>
-          </span>
-        </div>
-        {% if pub.description %}
-          <div class="description">{{ pub.description | trim}}</div>
-        {% endif %}
+        {% set data = load_data(path="content/publications/data.toml",
+        format="toml") %} {% for pub in data.publication %}
+        <div class="post">
+            <div class="title">
+                {% if pub.doi %}
+                <a
+                    href="{{ pub.doi }}"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >{{ pub.title | trim }}</a
+                >
+                {% else %} {{ pub.title | trim }} {% endif %}
+            </div>
+            <div class="authors">
+                <span style="text-align: left"
+                    >{{pub.authors | safe}}
+                    <span style="float: right">
+                        <div class="info">{{ pub.date | trim }}</div>
+                    </span>
+                </span>
+            </div>
+            {% if pub.description %}
+            <div class="description">{{ pub.description | trim}}</div>
+            {% endif %}
 
-        <div class="links">
-        <!-- {% if pub.doi %}<a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>DOI</a>{% endif %} -->
-        {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank" rel='noreferrer noopener'><i data-feather="download"></i></a>{% endif %}
-        {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel='noreferrer noopener'><i data-feather="github"></i></a>{% endif %}
+            <div
+                class="links-row"
+                style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 0.2em;
+                "
+            >
+                <div class="links" style="display: flex; align-items: center">
+                    <!-- {% if pub.doi %}<a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>DOI</a>{% endif %} -->
+                    {% if pub.pdf %}<a
+                        href="{{ pub.pdf }}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        ><i data-feather="download"></i></a
+                    >{% endif %} {% if pub.code %}<a
+                        href="{{ pub.code }}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        ><i data-feather="github"></i></a
+                    >{% endif %}
+                    <a
+                        href="javascript:void(0);"
+                        class="abstract-link"
+                        onclick="toggleAbstract('abstract-{{ loop.index0 }}', this)"
+                        >Show Abstract</a
+                    >
+                </div>
+                {% if pub.venue %}
+                <div
+                    class="venue"
+                    style="
+                        font-size: 0.95em;
+                        color: #666;
+                        margin-left: 1em;
+                        white-space: nowrap;
+                    "
+                >
+                    {{ pub.venue }}
+                </div>
+                {% endif %}
+            </div>
+            <div
+                id="abstract-{{ loop.index0 }}"
+                class="abstract-text"
+                style="display: none; margin-top: 0.5em"
+            >
+                {{ pub.abstract | safe }}
+            </div>
         </div>
-      </div>
-      {% endfor %}
-      </div>    
-  </div>
+        {% endfor %}
+    </div>
+</div>
+<script>
+    function toggleAbstract(id, btn) {
+        var el = document.getElementById(id);
+        if (el.style.display === "none") {
+            el.style.display = "block";
+            btn.textContent = "Hide Abstract";
+        } else {
+            el.style.display = "none";
+            btn.textContent = "Show Abstract";
+        }
+    }
+</script>
 {% endblock %}

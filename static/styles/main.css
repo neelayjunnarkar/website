@@ -1,18 +1,18 @@
 :root {
     /* Base styles */
-    --font-primary: 'IBM Plex Sans', Verdana, sans-serif;
+    --font-primary: "IBM Plex Sans", Verdana, sans-serif;
     --color-primary-text: #444;
     --color-background: #fff;
     --color-headline: #222;
     --color-link: #3273dc;
     --color-link-hover: #3273dc;
-    --color-selection: #FDD9B5;
+    --color-selection: #fdd9b5;
     --color-selection-text: #333;
     /* Tags */
-    --color-tag-bg: #FFE4C7;
-    --color-tag-border: #FFCBA4;
-    --color-tag-text: #D35400;
-    --color-tag-hover: #FFD9B0;
+    --color-tag-bg: #ffe4c7;
+    --color-tag-border: #ffcba4;
+    --color-tag-text: #d35400;
+    --color-tag-hover: #ffd9b0;
     /* Dark mode */
     --color-background-dark: #333;
     --color-text-dark: #ddd;
@@ -121,7 +121,7 @@ code {
 }
 
 pre code {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     display: block;
     padding: 20px;
     white-space: pre-wrap;
@@ -241,7 +241,7 @@ ul.blog-posts li a:visited {
 
 .zola-anchor {
     font-size: 1.25rem;
-    margin-right: .75rem;
+    margin-right: 0.75rem;
     text-decoration: none;
     border-bottom-color: rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -261,8 +261,7 @@ ul.blog-posts li a:visited {
     border-bottom: 1px dashed #6b7280;
 }
 
-
-.tags>a {
+.tags > a {
     background-color: var(--color-tag-bg);
     color: var(--color-tag-text);
     padding: 5px 12px;
@@ -275,7 +274,30 @@ ul.blog-posts li a:visited {
     vertical-align: middle;
 }
 
-.tags>a:hover {
+.abstract-link {
+    color: var(--color-link);
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.abstract-link:hover {
+    color: var(--color-link-hover);
+}
+
+.links-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.2em;
+}
+.links-row .venue {
+    font-size: 0.95em;
+    color: #666;
+    margin-left: 1em;
+    white-space: nowrap;
+}
+
+.tags > a:hover {
     opacity: 0.85;
 }
 
@@ -442,7 +464,7 @@ figure:hover {
             /* Smoothens the color transition on hover */
             margin-left: 0.5rem;
         }
-        
+
         a:hover {
             color: var(--color-link-hover);
             /* Using the existing link hover color variable */
@@ -463,19 +485,20 @@ figure:hover {
                 font-weight: inherit;
 
                 transition: color 0.3s ease;
-    
+
                 &:hover {
                     text-decoration: underline !important;
                 }
             }
         }
-    
+
         .divider:before {
             padding: 0 8px;
             content: "•";
         }
-    
-        @media (max-width: 500px) {}
+
+        @media (max-width: 500px) {
+        }
     }
 
     .title {
@@ -490,7 +513,7 @@ figure:hover {
             /* transition: color 0.3s ease; */
             /* Smoothens the color transition on hover */
         }
-        
+
         a:hover {
             color: var(--color-link-hover);
             /* Using the existing link hover color variable */
@@ -507,7 +530,6 @@ figure:hover {
     .description {
         font-style: italic;
     }
-
 }
 
 .section-header {
@@ -533,14 +555,16 @@ figure:hover {
 
 /* Color for dark theme */
 body[data-theme="dark"] .theme-toggle {
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .theme-transition {
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition:
+        background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
     opacity: 0.9;
 }
-
 
 body[data-theme="dark"] {
     background-color: var(--color-background-dark);
@@ -562,7 +586,7 @@ body[data-theme="dark"] a {
     color: var(--color-link-dark);
 }
 
-body[data-theme="dark"] .tags>a {
+body[data-theme="dark"] .tags > a {
     color: var(--color-tag-text);
 }
 
@@ -633,7 +657,7 @@ body[data-theme="dark"] .proj .name {
     color: var(--color-headline-dark);
 }
 
-body[data-theme="dark"] .proj .desc  {
+body[data-theme="dark"] .proj .desc {
     color: var(--color-helptext-dark);
 }
 
@@ -659,7 +683,7 @@ body[data-theme="dark"] .posts .post .name {
     color: var(--color-headline-dark);
 }
 
-body[data-theme="dark"] .posts .post .desc  {
+body[data-theme="dark"] .posts .post .desc {
     color: var(--color-helptext-dark);
 }
 
@@ -691,7 +715,7 @@ body[data-theme="dark"] .posts .post .links a:hover {
         font-size: 0.95rem;
     }
 
-    .tags>a {
+    .tags > a {
         padding: 4px 10px;
         font-size: 0.8rem;
     }
