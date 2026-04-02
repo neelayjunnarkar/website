@@ -17,60 +17,31 @@ endblock %} {% block main %}
                 >
                 {% else %} {{ pub.title | trim }} {% endif %}
             </div>
-            <div class="authors">
-                <span style="text-align: left"
-                    >{{pub.authors | safe}}
-                    <span style="float: right">
-                        <div class="info">{{ pub.date | trim }}</div>
-                    </span>
-                </span>
+            <div class="authors">{{ pub.authors | safe }}</div>
+            <div class="venue-date">
+                {% if pub.venue %}{{ pub.venue }}{% endif %}{% if pub.venue and
+                pub.date %}, {% endif %}{% if pub.date %}{{ pub.date | trim }}{%
+                endif %}
             </div>
-            {% if pub.description %}
-            <div class="description">{{ pub.description | trim}}</div>
-            {% endif %}
-
-            <div
-                class="links-row"
-                style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 0.2em;
-                "
-            >
-                <div class="links" style="display: flex; align-items: center">
-                    <!-- {% if pub.doi %}<a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>DOI</a>{% endif %} -->
-                    {% if pub.pdf %}<a
-                        href="{{ pub.pdf }}"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        ><i data-feather="download"></i></a
-                    >{% endif %} {% if pub.code %}<a
-                        href="{{ pub.code }}"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        ><i data-feather="github"></i></a
-                    >{% endif %}
-                    <a
-                        href="javascript:void(0);"
-                        class="abstract-link"
-                        onclick="toggleAbstract('abstract-{{ loop.index0 }}', this)"
-                        >Show Abstract</a
-                    >
-                </div>
-                {% if pub.venue %}
-                <div
-                    class="venue"
-                    style="
-                        font-size: 0.95em;
-                        color: #666;
-                        margin-left: 1em;
-                        white-space: nowrap;
-                    "
+            <div class="links">
+                {% if pub.pdf %}<a
+                    href="{{ pub.pdf }}"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><i data-feather="download"></i></a
+                >{% endif %} {% if pub.code %}<a
+                    href="{{ pub.code }}"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><i data-feather="github"></i></a
+                >{% endif %}
+                <a
+                    href="javascript:void(0);"
+                    class="abstract-link"
+                    onclick="toggleAbstract('abstract-{{ loop.index0 }}', this)"
                 >
-                    {{ pub.venue }}
-                </div>
-                {% endif %}
+                    Show Abstract
+                </a>
             </div>
             <div
                 id="abstract-{{ loop.index0 }}"
