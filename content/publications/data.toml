@@ -2,17 +2,19 @@
 title = "Learning Neural Network Controllers with Certified Robust Performance via Adversarial Training"
 authors = "<strong>Neelay Junnarkar</strong>, Yasin Sonmez, Murat Arcak"
 date = "2026"
-doi = "https://neelayjunnarkar.com/files/local_robust_dissipativity.pdf"
-pdf = "https://neelayjunnarkar.com/files/local_robust_dissipativity.pdf"
+doi = "https://arxiv.org/abs/2604.01188"
+pdf = "https://arxiv.org/pdf/2604.01188"
 code = "https://github.com/neelayjunnarkar/local-robust-dissipativity"
+selected = true
 
 [[publication]]
 title = "Polynomial Constraints for Robustness Analysis of Nonlinear Systems"
 authors = "<strong>Neelay Junnarkar</strong>, Peter Seiler, Murat Arcak"
 date = "2026"
-doi = "https://neelayjunnarkar.com/files/polynomial_constraints.pdf"
-pdf = "https://neelayjunnarkar.com/files/polynomial_constraints.pdf"
+doi = "https://arxiv.org/abs/2604.01198"
+pdf = "https://arxiv.org/pdf/2604.01198"
 code = "https://github.com/neelayjunnarkar/polynomial-constraints"
+selected = true
 
 [[publication]]
 title = "Sempervirens: A Fast Reconstruction Algorithm for Noisy and Incomplete Binary Matrix Representations of Trees"
@@ -21,6 +23,7 @@ date = "2025"
 doi = "https://doi.org/10.1287/ijoc.2023.0373"
 pdf = "/files/sempervirens.pdf"
 code = "https://github.com/nevenag/sempervirens"
+selected = false
 
 [[publication]]
 title = "Stability Margins of Neural Network Controllers"
@@ -29,6 +32,7 @@ date = "2025"
 doi = "https://doi.org/10.23919/ACC63710.2025.11107746"
 pdf = "https://arxiv.org/pdf/2409.09184.pdf"
 code = "https://github.com/neelayjunnarkar/nn-stability-margins"
+selected = true
 
 [[publication]]
 title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
@@ -37,6 +41,7 @@ date = "2024"
 doi = "https://arxiv.org/abs/2404.07373"
 pdf = "https://arxiv.org/pdf/2404.07373.pdf"
 code = "https://github.com/neelayjunnarkar/neural-network-dissipativity"
+selected = false
 
 [[publication]]
 title = "Exploiting Symmetry in Dynamics for Model-Based Reinforcement Learning with Asymmetric Rewards"
@@ -45,6 +50,7 @@ date = "2024"
 doi = "https://doi.org/10.1109/LCSYS.2024.3409560"
 pdf = "https://arxiv.org/pdf/2403.19024.pdf"
 code = "https://github.com/YasinSonmez/symmetry-cs285"
+selected = true
 
 [[publication]]
 title = "Grouping of N-1 Contingencies for Controller Synthesis: A Study for Power Line Failures"
@@ -52,6 +58,7 @@ authors = "<strong>Neelay Junnarkar</strong>, Emily Jensen, Xiaofan Wu, Suat Gum
 date = "2023"
 doi = "https://doi.org/10.1109/TPWRS.2024.3393866"
 pdf = "https://arxiv.org/pdf/2404.07415.pdf"
+selected = false
 
 [[publication]]
 title = "Certifying Stability and Performance of Uncertain Differential-Algebraic Systems: A Dissipativity Framework"
@@ -59,6 +66,7 @@ authors = "Emily Jensen, <strong>Neelay Junnarkar</strong>, Murat Arcak, Xiaofan
 date = "2023"
 doi = "https://arxiv.org/abs/2308.08471"
 pdf = "https://arxiv.org/pdf/2308.08471.pdf"
+selected = false
 
 [[publication]]
 title = "Synthesis of Stabilizing Recurrent Equilibrium Network Controllers"
@@ -67,6 +75,7 @@ date = "2022"
 doi = "https://doi.org/10.1109/CDC51059.2022.9992684"
 pdf = "https://arxiv.org/pdf/2204.00122.pdf"
 code = "https://github.com/neelayjunnarkar/stabilizing-ren"
+selected = false
 
 [[publication]]
 title = "Fast Assignment in Asset-Guarding Engagements using Function Approximation"
@@ -74,3 +83,4 @@ authors = "<strong>Neelay Junnarkar</strong>, Emmanuel Sin, Peter Seiler, Dougla
 date = "2022"
 doi = "https://doi.org/10.23919/ACC53348.2022.9867720"
 pdf = "https://arxiv.org/pdf/2404.08086.pdf"
+selected = false

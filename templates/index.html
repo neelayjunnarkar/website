@@ -1,43 +1,56 @@
-{% extends "base.html" %}
-
-{% block main %}
-  <main>
+{% extends "base.html" %} {% block main %}
+<main>
     {{ section.content | safe }}
-    
+
     <h2>Selected Research</h2>
     <!-- <p>Published and Under Review</p> -->
     <div class="projects-section">
-      <div class="posts">
-        {% set data = load_data(path="content/selected_publications.toml", format="toml") %}
-        {% for pub in data.publication %}
-        <div class="post">
-          <!-- <div class="info"><span>{{ pub.date | trim }}</span></div> -->
-          <div class="title">
-            {% if pub.doi %}
-              <a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>{{ pub.title | trim }}</a>
-            {% else %}
-              {{ pub.title | trim }}
-            {% endif %}
-          </div>
-          <div class="authors">
-            <span style="text-align:left">{{pub.authors | safe}}
-              <span style="float:right">
-                <div class="info">{{ pub.date | trim }}</div>
-              </span>
-            </span>
-          </div>
-          {% if pub.description %}
-            <div class="description">{{ pub.description | trim}}</div>
-          {% endif %}
+        <div class="posts">
+            {% set data = load_data(path="content/publications/data.toml",
+            format="toml") %} {% set selected_pubs = data.publication |
+            filter(attribute="selected", value=true) %} {% for pub in
+            selected_pubs %}
+            <div class="post">
+                <!-- <div class="info"><span>{{ pub.date | trim }}</span></div> -->
+                <div class="title">
+                    {% if pub.doi %}
+                    <a
+                        href="{{ pub.doi }}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        >{{ pub.title | trim }}</a
+                    >
+                    {% else %} {{ pub.title | trim }} {% endif %}
+                </div>
+                <div class="authors">
+                    <span style="text-align: left"
+                        >{{pub.authors | safe}}
+                        <span style="float: right">
+                            <div class="info">{{ pub.date | trim }}</div>
+                        </span>
+                    </span>
+                </div>
+                {% if pub.description %}
+                <div class="description">{{ pub.description | trim}}</div>
+                {% endif %}
 
-          <div class="links">
-          <!-- {% if pub.doi %}<a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>DOI</a>{% endif %} -->
-          {% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank" rel='noreferrer noopener'><i data-feather="download"></i></a>{% endif %}
-          {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel='noreferrer noopener'><i data-feather="github"></i></a>{% endif %}
-          </div>
+                <div class="links">
+                    <!-- {% if pub.doi %}<a href="{{ pub.doi }}" target="_blank" rel='noreferrer noopener'>DOI</a>{% endif %} -->
+                    {% if pub.pdf %}<a
+                        href="{{ pub.pdf }}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        ><i data-feather="download"></i></a
+                    >{% endif %} {% if pub.code %}<a
+                        href="{{ pub.code }}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        ><i data-feather="github"></i></a
+                    >{% endif %}
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-        </div>    
     </div>
-  </main>
+</main>
 {% endblock %}
