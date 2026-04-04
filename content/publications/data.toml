@@ -4,7 +4,6 @@ authors = "<strong>Neelay Junnarkar</strong>, Yasin Sonmez, Murat Arcak"
 date = "2026"
 doi = "https://arxiv.org/abs/2604.01188"
 pdf = "https://arxiv.org/pdf/2604.01188"
-code = "https://github.com/neelayjunnarkar/local-robust-dissipativity"
 abstract = "Neural network (NN) controllers achieve strong empirical performance on nonlinear dynamical systems, yet deploying them in safety-critical settings requires robustness to disturbances and uncertainty. We present a method for jointly synthesizing NN controllers and dissipativity certificates that formally guarantee robust closed-loop performance using adversarial training, in which we use counterexamples to the robust dissipativity condition to guide training. Verification is done post-training using alpha,beta-CROWN, a branch-and-bound-based method that enables direct analysis of the nonlinear dynamical system. The proposed method uses quadratic constraints (QCs) only for characterization of non-parametric uncertainties. The method is tested in numerical experiments on maximizing the volume of the set on which a system is certified to be robustly dissipative. Our method certifies regions up to 78 times larger than the region certified by a linear matrix inequality-based approach that we derive for comparison."
 venue = "Under review"
 selected = true
