@@ -1,0 +1,106 @@
+[[publication]]
+title = "Learning Neural Network Controllers with Certified Robust Performance via Adversarial Training"
+authors = "<strong>Neelay Junnarkar</strong>, Yasin Sonmez, Murat Arcak"
+date = "2026"
+doi = "https://arxiv.org/abs/2604.01188"
+pdf = "https://arxiv.org/pdf/2604.01188"
+code = "https://github.com/neelayjunnarkar/local-robust-dissipativity"
+abstract = "Neural network (NN) controllers achieve strong empirical performance on nonlinear dynamical systems, yet deploying them in safety-critical settings requires robustness to disturbances and uncertainty. We present a method for jointly synthesizing NN controllers and dissipativity certificates that formally guarantee robust closed-loop performance using adversarial training, in which we use counterexamples to the robust dissipativity condition to guide training. Verification is done post-training using alpha,beta-CROWN, a branch-and-bound-based method that enables direct analysis of the nonlinear dynamical system. The proposed method uses quadratic constraints (QCs) only for characterization of non-parametric uncertainties. The method is tested in numerical experiments on maximizing the volume of the set on which a system is certified to be robustly dissipative. Our method certifies regions up to 78 times larger than the region certified by a linear matrix inequality-based approach that we derive for comparison."
+venue = "Under review"
+selected = true
+
+[[publication]]
+title = "Polynomial Constraints for Robustness Analysis of Nonlinear Systems"
+authors = "<strong>Neelay Junnarkar</strong>, Peter Seiler, Murat Arcak"
+date = "2026"
+doi = "https://arxiv.org/abs/2604.01198"
+pdf = "https://arxiv.org/pdf/2604.01198"
+code = "https://github.com/neelayjunnarkar/polynomial-constraints"
+abstract = "This paper presents a framework for abstracting uncertain or non-polynomial components of dynamical systems using polynomial constraints. This enables the application of polynomial-based analysis tools, such as sum-of-squares programming, to a broader class of non-polynomial systems. A numerical method for constructing these constraints is proposed. The relationship between polynomial constraints and existing integral quadratic constraints (IQCs) is investigated, providing transformations of IQCs into polynomial constraints. The effectiveness of polynomial constraints in characterizing nonlinearities is validated via numerical examples to compute inner estimates of the region of attraction for two systems."
+venue = "Under Review"
+selected = true
+
+[[publication]]
+title = "Sempervirens: A Fast Reconstruction Algorithm for Noisy and Incomplete Binary Matrix Representations of Trees"
+authors = "<strong>Neelay Junnarkar</strong>, Can Kızılkale, Nevena Golubovic, Murat Arcak, Aydın Buluç"
+date = "2025"
+doi = "https://doi.org/10.1287/ijoc.2023.0373"
+pdf = "/files/sempervirens.pdf"
+code = "https://github.com/nevenag/sempervirens"
+abstract = "Applications such as reconstructing cell lineage trees (represented as phylogenetic trees) from single-cell sequencing data require reconstructing a {0,1}-matrix that has many errors and missing entries. We introduce Sempervirens, a very fast matrix reconstruction algorithm for noisy and incomplete matrix representations of phylogenetic trees. Sempervirens uses an iterative maximum-likelihood approach to determine the topology tree represented by the corrupted data. We show that Sempervirens is at least three orders of magnitude faster than other methods on thousand by thousand matrices, with the speed gap widening with larger matrices. We also show that Sempervirens matches state-of-the-art methods in reconstruction accuracy. The speed of Sempervirens enables it to be tractably applied to reconstructing much larger matrices than those that other methods can reconstruct. In addition to experimental results, we justify the algorithm with a mathematical treatment of its subprocedures."
+venue = "INFORMS Journal on Computing"
+selected = false
+
+[[publication]]
+title = "Stability Margins of Neural Network Controllers"
+authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
+date = "2025"
+doi = "https://doi.org/10.23919/ACC63710.2025.11107746"
+pdf = "https://arxiv.org/pdf/2409.09184.pdf"
+code = "https://github.com/neelayjunnarkar/nn-stability-margins"
+abstract = "We present a method to train neural network controllers with guaranteed stability margins. The method is applicable to linear time-invariant plants interconnected with uncertainties and nonlinearities that are described by integral quadratic constraints. The type of stability margin we consider is the disk margin. Our training method alternates between a training step to maximize reward and a stability margin-enforcing step. In the stability margin enforcing-step, we solve a semidefinite program to project the controller into the set of controllers for which we can certify the desired disk margin."
+venue = "IEEE American Control Conference (ACC)"
+selected = true
+
+[[publication]]
+title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
+authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
+date = "2025"
+doi = "https://arxiv.org/abs/2404.07373"
+pdf = "https://arxiv.org/pdf/2404.07373.pdf"
+code = "https://github.com/neelayjunnarkar/neural-network-dissipativity"
+abstract = "In this paper, a method is presented to synthesize neural network controllers such that the feedback system of plant and controller is dissipative, certifying performance requirements such as L2 gain bounds. The class of plants considered is that of linear time-invariant (LTI) systems interconnected with an uncertainty, including nonlinearities treated as an uncertainty for convenience of analysis. The uncertainty of the plant and the nonlinearities of the neural network are both described using integral quadratic constraints (IQCs). First, a dissipativity condition is derived for uncertain LTI systems. Second, this condition is used to construct a linear matrix inequality (LMI) which can be used to synthesize neural network controllers. Finally, this convex condition is used in a projection-based training method to synthesize neural network controllers with dissipativity guarantees. Numerical examples on an inverted pendulum and a flexible rod on a cart are provided to demonstrate the effectiveness of this approach."
+venue = "Under review"
+selected = true
+
+[[publication]]
+title = "Exploiting Symmetry in Dynamics for Model-Based Reinforcement Learning with Asymmetric Rewards"
+authors = "Yasin Sonmez, <strong>Neelay Junnarkar</strong>, Murat Arcak"
+date = "2024"
+doi = "https://doi.org/10.1109/LCSYS.2024.3409560"
+pdf = "https://arxiv.org/pdf/2403.19024.pdf"
+code = "https://github.com/YasinSonmez/symmetry-cs285"
+abstract = "Recent work in reinforcement learning has leveraged symmetries in the model to improve sample efficiency in training a policy. A commonly used simplifying assumption is that the dynamics and reward both exhibit the same symmetry; however, in many real-world environments, the dynamical model exhibits symmetry independent of the reward model. In this letter, we assume only the dynamics exhibit symmetry, extending the scope of problems in reinforcement learning and learning in control theory to which symmetry techniques can be applied. We use Cartan’s moving frame method to introduce a technique for learning dynamics that, by construction, exhibit specified symmetries. Numerical experiments demonstrate that the proposed method learns a more accurate dynamical model."
+venue = "IEEE Control Systems Letters (L-CSS)"
+selected = true
+
+[[publication]]
+title = "Grouping of N-1 Contingencies for Controller Synthesis: A Study for Power Line Failures"
+authors = "<strong>Neelay Junnarkar</strong>, Emily Jensen, Xiaofan Wu, Suat Gumussoy, Murat Arcak"
+date = "2023"
+doi = "https://doi.org/10.1109/TPWRS.2024.3393866"
+pdf = "https://arxiv.org/pdf/2404.07415.pdf"
+abstract = "The problem of maintaining power system stability and performance after the failure of any single line in a power system (an “N−1 contingency”) is investigated. Due to the large number of possible N−1 contingencies for a power network, it is impractical to optimize controller parameters for each possible contingency a priori. A method to partition a set of contingencies into groups of contingencies that are similar to each other from a control perspective is presented. Design of a single controller for each group, rather than for each contingency, provides a computationally tractable method for maintaining stability and performance after element failures. The choice of number of groups tunes a trade-off between computation time and controller performance for a given set of contingencies. Results are simulated on the IEEE 39-bus and 68-bus systems, illustrating that, with controllers designed for a relatively small number of groups, power system stability may be significantly improved after an N−1 contingency compared to continued use of the nominal controller. Furthermore, performance is comparable to that of controllers designed for each contingency individually."
+venue = "IEEE Transactions on Power Systems"
+selected = false
+
+[[publication]]
+title = "Certifying Stability and Performance of Uncertain Differential-Algebraic Systems: A Dissipativity Framework"
+authors = "Emily Jensen, <strong>Neelay Junnarkar</strong>, Murat Arcak, Xiaofan Wu, Suat Gumussoy"
+date = "2023"
+doi = "https://doi.org/10.1109/TCNS.2024.3510585"
+pdf = "https://arxiv.org/pdf/2308.08471.pdf"
+abstract = "This article presents a novel framework for characterizing the dissipativity of uncertain systems whose dynamics evolve according to differential–algebraic equations. Sufficient conditions for dissipativity (specializing to, e.g., stability or L2 gain bounds) are provided in the case that uncertainties are characterized by integral quadratic constraints. For polynomial or linear dynamics, these conditions can be efficiently verified through sum-of-squares or semidefinite programming. The performance analysis of the IEEE 39-bus power network with a set of potential line failures modeled as an uncertainty set provides an illustrative example that highlights the computational tractability of this approach; conservatism introduced in this example is shown to be quite minimal."
+venue = "IEEE Transactions on Control of Network Systems"
+selected = false
+
+[[publication]]
+title = "Synthesis of Stabilizing Recurrent Equilibrium Network Controllers"
+authors = "<strong>Neelay Junnarkar</strong>, He Yin, Fangda Gu, Murat Arcak, Peter Seiler"
+date = "2022"
+doi = "https://doi.org/10.1109/CDC51059.2022.9992684"
+pdf = "https://arxiv.org/pdf/2204.00122.pdf"
+code = "https://github.com/neelayjunnarkar/stabilizing-ren"
+abstract = "We propose a parameterization of a nonlinear dynamic controller based on the recurrent equilibrium network, a generalization of the recurrent neural network. We derive constraints on the parameterization under which the controller guarantees exponential stability of a partially observed dynamical system with sector bounded nonlinearities. Finally, we present a method to synthesize this controller using projected policy gradient methods to maximize a reward function with arbitrary structure. The projection step involves the solution of convex optimization problems. We demonstrate the proposed method with simulated examples of controlling a nonlinear inverted pendulum."
+venue = "IEEE Conference on Decision and Control (CDC)"
+selected = false
+
+[[publication]]
+title = "Fast Assignment in Asset-Guarding Engagements using Function Approximation"
+authors = "<strong>Neelay Junnarkar</strong>, Emmanuel Sin, Peter Seiler, Douglas Philbrick, Murat Arcak"
+date = "2022"
+doi = "https://doi.org/10.23919/ACC53348.2022.9867720"
+pdf = "https://arxiv.org/pdf/2404.08086.pdf"
+abstract = "This letter considers assignment problems consisting of n pursuers attempting to intercept n targets. We consider stationary targets as well as targets maneuvering toward an asset. The assignment algorithm relies on an n × n cost matrix where entry (i, j) is the minimum time for pursuer i to intercept target j. Each entry of this matrix requires the solution of a nonlinear optimal control problem. This subproblem is computationally intensive and hence the computational cost of the assignment is dominated by the construction of the cost matrix. We propose to use neural networks for function approximation of the minimum time until intercept. The neural networks are trained offline, thus allowing for real-time online construction of cost matrices. Moreover, the function approximators have sufficient accuracy to obtain reasonable solutions to the assignment problem. In most cases, the approximators achieve assignments with optimal worst case intercept time. The proposed approach is demonstrated on several examples with increasing numbers of pursuers and targets."
+venue = "IEEE American Control Conference (ACC)"
+selected = false
