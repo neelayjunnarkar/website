@@ -17,7 +17,7 @@ doi = "https://arxiv.org/abs/2604.01198"
 pdf = "https://arxiv.org/pdf/2604.01198"
 code = "https://github.com/neelayjunnarkar/polynomial-constraints"
 abstract = "This paper presents a framework for abstracting uncertain or non-polynomial components of dynamical systems using polynomial constraints. This enables the application of polynomial-based analysis tools, such as sum-of-squares programming, to a broader class of non-polynomial systems. A numerical method for constructing these constraints is proposed. The relationship between polynomial constraints and existing integral quadratic constraints (IQCs) is investigated, providing transformations of IQCs into polynomial constraints. The effectiveness of polynomial constraints in characterizing nonlinearities is validated via numerical examples to compute inner estimates of the region of attraction for two systems."
-venue = "Under Review"
+venue = "Accepted to IEEE Control Systems Letters (L-CSS)"
 selected = true
 
 [[publication]]
@@ -50,7 +50,7 @@ doi = "https://arxiv.org/abs/2404.07373"
 pdf = "https://arxiv.org/pdf/2404.07373.pdf"
 code = "https://github.com/neelayjunnarkar/neural-network-dissipativity"
 abstract = "In this paper, a method is presented to synthesize neural network controllers such that the feedback system of plant and controller is dissipative, certifying performance requirements such as L2 gain bounds. The class of plants considered is that of linear time-invariant (LTI) systems interconnected with an uncertainty, including nonlinearities treated as an uncertainty for convenience of analysis. The uncertainty of the plant and the nonlinearities of the neural network are both described using integral quadratic constraints (IQCs). First, a dissipativity condition is derived for uncertain LTI systems. Second, this condition is used to construct a linear matrix inequality (LMI) which can be used to synthesize neural network controllers. Finally, this convex condition is used in a projection-based training method to synthesize neural network controllers with dissipativity guarantees. Numerical examples on an inverted pendulum and a flexible rod on a cart are provided to demonstrate the effectiveness of this approach."
-venue = "Under review"
+venue = "Accepted to IFAC Automatica"
 selected = true
 
 [[publication]]
