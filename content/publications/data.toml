@@ -13,11 +13,11 @@ selected = true
 title = "Polynomial Constraints for Robustness Analysis of Nonlinear Systems"
 authors = "<strong>Neelay Junnarkar</strong>, Peter Seiler, Murat Arcak"
 date = "2026"
-doi = "https://arxiv.org/abs/2604.01198"
+doi = "https://doi.org/10.1109/lcsys.2026.3701072"
 pdf = "https://arxiv.org/pdf/2604.01198"
 code = "https://github.com/neelayjunnarkar/polynomial-constraints"
 abstract = "This paper presents a framework for abstracting uncertain or non-polynomial components of dynamical systems using polynomial constraints. This enables the application of polynomial-based analysis tools, such as sum-of-squares programming, to a broader class of non-polynomial systems. A numerical method for constructing these constraints is proposed. The relationship between polynomial constraints and existing integral quadratic constraints (IQCs) is investigated, providing transformations of IQCs into polynomial constraints. The effectiveness of polynomial constraints in characterizing nonlinearities is validated via numerical examples to compute inner estimates of the region of attraction for two systems."
-venue = "Accepted to IEEE Control Systems Letters (L-CSS)"
+venue = "IEEE Control Systems Letters (L-CSS)"
 selected = true
 
 [[publication]]
