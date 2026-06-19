@@ -7,16 +7,10 @@ title = "Home"
 
   <div class="home-content">
 
-Hello! I'm a PhD candidate in EECS at UC Berkeley, advised by [Murat Arcak](https://people.eecs.berkeley.edu/~arcak/).
-My primary research interests are in the application of machine learning to control, with an emphasis on safety, particularly under uncertainty.
+Hello! I received my PhD in EECS at UC Berkeley, advised by [Murat Arcak](https://people.eecs.berkeley.edu/~arcak/).
+My research is in the intersection of machine learning and controls.
 
 See my [CV](/files/NeelayJunnarkar_CV.pdf)!
-
-## Ongoing Work
-
-+ Joint synthesis of neural network controllers and certificates of closed-loop robustness.
-* Tighter bounds on model uncertainties and nonlinearities for computationally tractable verification
-* Faster constrained neural network training
 
   </div>
 
