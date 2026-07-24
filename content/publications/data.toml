@@ -45,12 +45,12 @@ selected = true
 [[publication]]
 title = "Synthesizing Neural Network Controllers with Closed-Loop Dissipativity Guarantees"
 authors = "<strong>Neelay Junnarkar</strong>, Murat Arcak, Peter Seiler"
-date = "2025"
-doi = "https://arxiv.org/abs/2404.07373"
+date = "2026"
+doi = "https://doi.org/10.1016/j.automatica.2026.113185"
 pdf = "https://arxiv.org/pdf/2404.07373.pdf"
 code = "https://github.com/neelayjunnarkar/neural-network-dissipativity"
 abstract = "In this paper, a method is presented to synthesize neural network controllers such that the feedback system of plant and controller is dissipative, certifying performance requirements such as L2 gain bounds. The class of plants considered is that of linear time-invariant (LTI) systems interconnected with an uncertainty, including nonlinearities treated as an uncertainty for convenience of analysis. The uncertainty of the plant and the nonlinearities of the neural network are both described using integral quadratic constraints (IQCs). First, a dissipativity condition is derived for uncertain LTI systems. Second, this condition is used to construct a linear matrix inequality (LMI) which can be used to synthesize neural network controllers. Finally, this convex condition is used in a projection-based training method to synthesize neural network controllers with dissipativity guarantees. Numerical examples on an inverted pendulum and a flexible rod on a cart are provided to demonstrate the effectiveness of this approach."
-venue = "Accepted to IFAC Automatica"
+venue = "IFAC Automatica"
 selected = true
 
 [[publication]]
