@@ -1,0 +1,12 @@
+[[project]]
+name = "ipscoreboard"
+description = "A minimalist, expressive, interactive website with broad platform support written in rust."
+homepage = "https://neelay.net"
+code = "https://github.com/neelayjunnarkar/ipscoreboard"
+
+[[project]]
+name = "mines"
+description = "Multiplayer minesweeper."
+homepage = "https://mines.neelay.net"
+code = "https://github.com/neelayjunnarkar/mines"
+
